@@ -1,5 +1,8 @@
 namespace: krampoline
 resources:
+  - zookeeper.yaml
+  - kafka.yaml
   - deployment.yaml
   - service.yaml
   - ingress.yaml
+  
