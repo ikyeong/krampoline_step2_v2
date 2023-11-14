@@ -6,7 +6,7 @@ metadata:
     app: kafka
 spec:
   ports:
-  - port: "9092"
+  - port: 9092
     name: kafka-port
   clusterIP: None
   selector:
@@ -34,9 +34,9 @@ spec:
         image: wurstmeister/kafka
         resources:
           requests:
-            memory: "500Mi"
+            memory: 500Mi
         ports:
-        - containerPort: "9092"
+        - containerPort: 9092
           name: kafka-port
         env:
         - name: KAFKA_ADVERTIESD_PORT
@@ -59,4 +59,4 @@ spec:
             - ReadWriteOnce
           resources:
             requests:
-              storage: "1Gi"
+              storage: 1Gi
