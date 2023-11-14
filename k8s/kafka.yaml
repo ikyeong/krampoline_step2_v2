@@ -45,9 +45,9 @@ spec:
           value: zookeeper:2181
         - name: KAFKA_CREATE_TOPICS
           value: |
-          notion:1:1
-          google_docs:1:1
-          kakao:1:1
+            notion:1:1
+            google_docs:1:1
+            kakao:1:1
 
   volumeClaimTemplates:
       - metadata:
