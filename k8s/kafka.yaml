@@ -39,7 +39,7 @@ spec:
         - containerPort: 9092
           name: kafka-port
         env:
-        - name: KAFKA_ADVERTIESD_PORT:
+        - name: KAFKA_ADVERTIESD_PORT
           value: 9092
         - name: KAFKA_ADVERTISED_HOST_NAME
           value: kakfa
